@@ -1,9 +1,60 @@
-.container.my-5 {
-    text-align: center;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
+body{
+    background-color: Linen;
 }
 
-.container.my-5 .col-lg-8 {
+.container.my-5 {
+    margin-bottom: 0 !important;
     text-align: left;
+    font-family: 'Courier New', monospace;
+}
+
+.header-section {
+    display: flex;
+    align-items: center; /* within text vert orientation*/
+    justify-content: left;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.header-section h2 {
+    margin: 0;
+}
+
+.divider {
+    width: 2px;
+    height: 30px;
+    background-color: #333;
+    a
+}
+
+.col-links {
+    display: flex;
+    justify-contenjustify-contentt: center;
+    gap: 30px;
+    font-size: 15px;
+}
+
+.col-links a {
+    color: #999;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.col-links a:hover {
+    color: #000; 
+}
+
+.container.my-5 .col-lg-8{
+    text-align: left;
+    font-size: 15px;
+}
+
+.container.my-5 .col-lg-8 a {
+    color: #999;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.container.my-5 .col-lg-8 a:hover {
+    color: #000;
 }
