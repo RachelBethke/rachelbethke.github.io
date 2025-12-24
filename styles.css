@@ -70,14 +70,12 @@ body{
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* or keep it square with border-radius: 0; */
-}
+    border-radius: 50%;}
 
 .section {
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ddd; /* subtle separator */
-}
+    border-bottom: 1px solid #ddd;}
 
 .section:last-child {
     border-bottom: none;
@@ -88,3 +86,104 @@ body{
     margin-bottom: 10px;
     color: #666;
 }
+
+/*technical projects page*/
+.coursework-section {
+    margin-bottom: 40px;
+}
+
+.coursework-section p {
+    line-height: 1.6;
+}
+
+.projects-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-box {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.project-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.project-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-box .skills {
+    font-size: 13px;
+    color: #666;
+    margin-top: auto;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.project-media {
+    width: 300px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-media iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.project-media img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.media-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 768px) {
+    .project-box {
+        flex-direction: column;
+    }
+    
+    .project-media {
+        width: 100%;
+    }
+}
+
